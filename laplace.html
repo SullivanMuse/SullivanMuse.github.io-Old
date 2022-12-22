@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.2/lib/p5.js"></script>
+    <script>
+      MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']]
+        }
+      };
+    </script>
+    <script id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+    </script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a href="index.html">Home</a>
+    <main>
+      $$\begin{array}{cc}
+      f(t)&F(s)\\
+      \hline
+      \frac{1}{2\pi i}\int_{s'-i\infty}^{s'+i\infty}F(s)e^{st}ds&\int_0^\infty f(t)e^{-st}dt\\
+      \delta(t)&1(s)\\
+      u(t)&\frac{1}{s}\\
+      t&\frac{1}{s^2}\\
+      t^n&\frac{n!}{s^{n+1}}\\
+      \begin{pmatrix}\sin&\cos\\\sinh&\cosh\end{pmatrix}(\omega t)&\frac{\begin{pmatrix}\omega&s\end{pmatrix}}{s^2\pm \omega^2}\\
+      u(t-a)f(t-a)&e^{-as}F(s)\\
+      e^{at}f(t)&F(s-a)\\
+      (f\star g)(t)=\int_0^t f(t-\tau)g(\tau)d\tau&F(s)G(s)\\
+      f'(t)&sF(s)-f(0)\\
+      f^{(n)}(t)&s^nF(s)-s^\downarrow f^{(\uparrow)}(0)\\
+      \end{array}$$
+    </main>
+
+    <a href="https://tutorial.math.lamar.edu/classes/de/laplace_table.aspx">Paul's Laplace Transforms</a>
+  </body>
+</html>
