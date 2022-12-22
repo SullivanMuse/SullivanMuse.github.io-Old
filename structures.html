@@ -1,0 +1,89 @@
+<html>
+  <head>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.2/lib/p5.js"></script>
+    <script>
+      MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']]
+        }
+      };
+    </script>
+    <script id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+    </script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a href="index.html">Home</a>
+    <hr />
+    <main>
+      $$\begin{array}{c}
+      \text{statics}\\
+      \hline
+      R=-\sum_j P_j\\
+      M_A=-\sum_j M_j-\sum_j r_j\times P_j\\
+      \end{array}$$
+      
+      $$\begin{array}{c}
+      \text{centroids}\\
+      \hline
+      \bar x=\begin{cases}
+      \frac{\int_A xdA}{\int_A dA}&\text{single}\\
+      \frac{\sum_j\bar x_j A_j}{\sum_j A_j}&\text{collection}\\
+      0&\text{symmetrical}\\
+      \frac{h}{3}&\text{triangle}\\
+      \frac{4r}{3\pi}&\text{semicircle}\\
+      \end{cases}
+      \end{array}$$
+
+      $$\begin{array}{c}
+      \text{distributed}\\
+      \hline
+      F=\int_L fdx\\
+      M=\int_L r\times fdx\\
+      r\times F=M\\
+      r\stackrel{r\perp F}=\frac{M}{F}\\
+      \end{array}$$
+      
+      $$\begin{array}{c}
+      \text{conventions}\\
+      \hline
+      \sigma>0,\ \varepsilon>0\text{ if tensile}\\
+      \gamma>0\text{ if angle decreases}\\
+      \end{array}$$
+
+      $$\begin{array}{c}
+      \text{traction}\\
+      \hline
+      t=\sigma+\tau\stackrel{[\cdot]}=\frac{F}{A}\\
+      t_{av}=\frac{1}{A}\int_A tdA=\frac{P}{A}\\
+      \end{array}$$
+      
+      $$\begin{array}{c}
+      \text{skew plane area}\\
+      \hline
+      A'=A\sec\theta
+      \end{array}$$
+
+      $$\begin{array}{c}
+      \text{strain}\\
+      \hline
+      \varepsilon=\frac{dL'-dL}{dL}\\
+      \delta=\int_L\varepsilon dL\\
+      \gamma=-\Delta\theta=\frac{\pi}{2}-\arccos\frac{x_i'\cdot x_j'}{|x_i'||x_j'|}
+      \end{array}$$
+
+      $$\begin{array}{c}
+      \text{isotropic linear elasticity}\\
+      \hline
+      \varepsilon_i=\frac{1}{E}(\sigma_i-\nu\sum_{j\ne i}\sigma_j)\\
+      \gamma_{ij}=\frac{\tau_{ij}}{G}\\
+      [E]=\frac{F}{A}\text{ (elastic modulus)}\\
+      [G]=\frac{F}{A}\text{ (shear modulus)}\\
+      [\nu]=1\text{ (Poisson's ratio)}\\
+      \hline
+      \varepsilon_{ij}=\frac{1}{E}[(1+\nu)\sigma_{ij}-\nu\delta_{ij}\sigma_{kk}]
+      \end{array}$$
+    </main>
+  </body>
+</html>

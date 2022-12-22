@@ -1,0 +1,51 @@
+<html>
+  <head>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.2/lib/p5.js"></script>
+    <script>
+      MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']]
+        }
+      };
+    </script>
+    <script id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+    </script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a href="index.html">Home</a>
+    <hr />
+    <main>
+      $$\begin{array}{cc}
+      T_1=T_2\land T_2=T_3\implies T_1=T_3&\text{0th law}\\
+      \Delta e=0&\text{1st law}\\
+      \Delta s\ge 0&\text{2nd law}\\
+      S=k\log W&\text{3rd law}\\
+      de=Tds-pdv&\text{combined 1st/2nd law}\\
+      p=\rho RT&\text{ideal gas law}
+      \end{array}$$
+
+      $$\begin{array}{cc}
+      \text{1d flow}\\
+      \hline
+      \rho_1u_1=\rho_2u_2\\
+      p_1+\rho_1u_1^2=p_2+\rho_2u_2^2\\
+      h_1+u_1^2/2=h_2+u_2^2/2\\
+      \end{array}$$
+
+      $$\begin{array}{c}
+      \text{shock wave}\\
+      \hline
+      M_2^2=\frac{M_1^2(\gamma-1)+2}{2\gamma M_1^2-(\gamma-1)}\\
+      \frac{T_2}{T_1}=\frac{h_2}{h_1}=\left(\frac{a_2}{a_1}\right)^2=1+\frac{2(\gamma-1)(M_1^2-1)(\gamma M_1^2+1)}{(\gamma+1)^2M_1^2}\\
+      \frac{p_2}{p_1}=1+\frac{2\gamma}{\gamma+1}(M_1^2-1)\\
+      \frac{\rho_2}{\rho_1}=\frac{u_1}{u_2}=\frac{(\gamma+1)M_1^2}{2+(\gamma-1)M_1^2}\\
+      \frac{p_{02}}{p_{01}}=\left(\frac{(\gamma+1)M_1^2}{2+(\gamma-1)M_1^2}\right)^{\frac{\gamma}{\gamma-1}}\left(\frac{\gamma+1}{2\gamma M_1^2-(\gamma-1)}\right)^{\frac{1}{\gamma-1}}\\
+      \tan\delta=2\cot\beta\frac{M_1^2\sin^2\beta-1}{M_1^2(\gamma+\cos 2\beta)+2}\\
+      M_{1n}=M_1\sin\beta\\
+      M_{2n}=M_2\sin(\beta-\delta)\\
+      \end{array}$$
+    </main>
+  </body>
+</html>
