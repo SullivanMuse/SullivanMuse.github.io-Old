@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.2/lib/p5.js"></script>
+    <script>
+      MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']]
+        }
+      };
+    </script>
+    <script id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+    </script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a href="index.html">Home</a>
+    <hr />
+    <main>
+      $$\begin{array}{c}
+      \begin{matrix}
+        \delta_{ij}=\begin{cases}1&i=j\\0&i\ne j\end{cases}&
+        \epsilon_{ijk}=\begin{cases}1&\text{cyclic}\\-1&\text{anti-cyclic}\\0&\text{repeated}\end{cases}
+      \end{matrix}\\
+      \begin{matrix}
+        (a\times b)_k=\epsilon_{ijk}a_ib_j&
+        a\times b=\begin{Bmatrix}a_2b_3-a_3b_2\\a_3b_1-a_1b_3\\a_1b_2-a_2b_1\end{Bmatrix}&
+        \tilde a=\begin{bmatrix}0&-a_3&a_2\\a_3&0&-a_1\\-a_2&a_1&0\end{bmatrix}
+      \end{matrix}\\
+      a\cdot b=a_ib_i\\
+      a_{\parallel b}=\frac{a\cdot b}{b\cdot b}b\\
+      a_{\perp b}=a-a_{\parallel b}\\
+      \cos\theta=\frac{a\cdot b}{|a||b|}\\
+      \nabla=\partial_i\\
+      \nabla p=p_i\\
+      \nabla\vec v=u_{i,j}\\
+      \nabla\cdot\vec v=u_{i,i}\\
+      u\otimes u=u_iu_j\\
+      \nabla (u\otimes u)=\nabla uu=u_{i,j}u_j\\
+      D\rho=\rho_{,t}+u_i\rho_{,i}\\
+      \end{array}$$
+    </main>
+  </body>
+</html>
