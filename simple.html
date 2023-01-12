@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.2/lib/p5.js"></script>
+    <script>
+      MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']]
+        }
+      };
+    </script>
+    <script id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+    </script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a href="index.html">Home</a>
+    <hr />
+    <main>
+      $$\begin{array}{cc}
+      v(t)=v_0+gt&\text{velocity}\\
+      h(t)=v_0t+\frac{1}{2}gt^2&\text{freefall equation of motion}\\
+      \Delta t_f=\sqrt{\frac{2h}{g}}&\text{time to free-fall}\\
+      \Delta t_t=\frac{h}{v_t}&\text{time to fall at terminal velocity}\\
+      v_t=\sqrt{\frac{2mg}{\rho AC_d}}\stackrel{\text{human}}\approx 56\text{ m s}^{-1}&\text{terminal velocity}\\
+      t_t=\frac{v_t}{g}\stackrel{\text{human}}=5.7\text{ s}&\text{time to reach terminal velocity}
+      \end{array}$$
+    </main>
+  </body>
+</html>
